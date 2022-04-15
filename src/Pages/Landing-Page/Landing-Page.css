@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Open+Sans&family=Sansita:ital@1&display=swap');
+
+.home-main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+.home-img{
+    width: 48rem;
+    height: 43rem;
+    margin-top: 4rem;
+}
+
+.home-left-side-container{
+    margin-top: 4rem;
+}
+.home-left-side-subcontainer{
+    height: 47rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.landing-page-heading{
+    font-size: 2.7rem;
+    text-decoration: underline;
+}
+
+
+.span-text-one{
+    color: blue;
+}
+.span-text-two{
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+    font-size: 2rem;
+}
+
+.landing-page-paragraph {
+    width: 17rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guest-mode-btn{
+    padding: .9rem;
+    border: transparent;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    margin-bottom:3rem ;
+}

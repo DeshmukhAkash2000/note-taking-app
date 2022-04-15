@@ -1,0 +1,25 @@
+input{
+    width: 40rem;
+    padding: 1rem;
+    border: 2px solid;
+    border-radius: 1rem;
+}
+
+.create-notes-btn{
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.notes-page-main-container{
+    display: flex;
+}
+
+.home-input-and-btn-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
