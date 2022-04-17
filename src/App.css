@@ -49,3 +49,22 @@
   font-size: 1.2rem;
   margin: 1rem;
 }
+
+.sidebar-pages-container{
+  display: flex;
+}
+
+button{
+  cursor: pointer;
+}
+
+:root{
+  --white:white;
+  --grey:grey;
+  --black:black;
+  --red:red;
+  --blue:blue;
+
+
+
+}

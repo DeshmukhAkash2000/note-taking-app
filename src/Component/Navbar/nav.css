@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita:ital@1&display=swap');
+
+
+.header{
+    box-shadow: 2px 2px  grey;
+    padding: 1.5rem;
+    display: flex;
+    
+}
+
+.my-notes-text{
+    font-family: 'Sansita', sans-serif;
+   
+}
+.nav-img{
+
+    height: 5rem;
+    border-radius: 5rem;
+    border: 2px solid;
+    cursor: pointer;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 14rem;
+}
+
+.fa{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-auth-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 9rem;
+
+}
+
+.nav-login-btn{
+    padding: .5rem;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
