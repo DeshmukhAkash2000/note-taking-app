@@ -5,6 +5,7 @@ import App from "./App";
 import { makeServer } from "./server";
 import {BrowserRouter} from "react-router-dom";
 import { InputContectProvider } from "../src/Component/context/inputContext";
+import {NoteContextProvider} from "./Context/NoteContext"
 
 
 // Call make Server
@@ -14,9 +15,10 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <InputContectProvider>
+      <NoteContextProvider>
         <App />
-      </InputContectProvider>
+      </NoteContextProvider>
+     
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root"))
