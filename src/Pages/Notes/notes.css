@@ -15,11 +15,20 @@
 
 .notes-page-main-container{
     display: flex;
+    position: relative;
+    border: 2px solid green;
+}
+
+.home-input-and-btn-container:hover .color-btn-section{
+    display: block;
+    display: flex;
+    justify-content: flex-start;
 }
 
 h4{
     text-decoration: underline;
 }
+
 .home-input-and-btn-container{
     border: 2px solid;
     width: 25rem;
@@ -28,6 +37,13 @@ h4{
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    border: 2px solid red;
+}
+
+.ass{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .savedNotes-container{
@@ -38,8 +54,10 @@ h4{
 }
 
 .savedNotes-second-container{
+    border-radius: 10px;
     border: 2px solid;
-    width:50%;
+    width:20rem;
+    height: 17rem;
 }
 
 .SN-priority{
@@ -47,4 +65,62 @@ h4{
     width: auto;
 }
 
+
+.SV-icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.archieve-note-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.color-btn-section{
+    display: flex;
+    justify-content: flex-start;
+    gap: .3rem;
+    display: none;
+}
+.red-btn{
+    background-color: red;
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.green-btn{
+    background-color: green;
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.blue-btn{
+    background-color: blue;
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pink-btn{
+    background-color: pink;
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.yellow-btn{
+    background-color: yellow;
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.filterbar-in-notes{
+    position: absolute;
+    right: 2rem;
+    top: 0;
+}
 

@@ -18,5 +18,5 @@
 .sidebar-icon-btn{
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 1rem;
 }

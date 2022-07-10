@@ -1,32 +1,39 @@
-import React from 'react';
+import React from "react";
 import "./sidebar.css";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div>
-       <div className="main-side-container">
-            <div className='sidebar-icon-btn'>
-              <i class="fa fa-home side-icon"></i>
-              <button className="sidebar-btn">Home</button>
-            </div>
+      <aside className="main-side-container">
+       <Link to="/">
+        <div className="sidebar-icon-btn">
+            <i class="fa fa-home side-icon"></i>
+            <button className="sidebar-btn">Home</button>
+          </div>
+       </Link>
 
-            <div className='sidebar-icon-btn'>
-              <i class="fa fa-archive side-icon"></i>
-              <button className="sidebar-btn">Archieve</button>
-            </div>
+        <Link to="/archieve">
+          <div className="sidebar-icon-btn">
+            <i class="fa fa-archive side-icon"></i>
+            <button className="sidebar-btn">Archieve</button>
+          </div>
+        </Link>
 
-            <div className='sidebar-icon-btn'>
-              <i class="fa fa-trash-o side-icon"></i>
-              <button className="sidebar-btn">Trash</button>
-            </div>
+       <Link to="/trash">
+        <div className="sidebar-icon-btn">
+            <i class="fa fa-trash-o side-icon"></i>
+            <button className="sidebar-btn">Trash</button>
+          </div>
+       </Link>
 
-            <div className='sidebar-icon-btn'>
-              <i class="fa fa-tags side-icon"></i>
-              <button className="sidebar-btn">Profile</button>
-            </div>
+        <div className="sidebar-icon-btn">
+          <i class="fa fa-tags side-icon"></i>
+          <button className="sidebar-btn">Profile</button>
         </div>
+      </aside>
     </div>
-  )
-}
+  );
+};
 
-export {Sidebar};
+export { Sidebar };

@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
 import {BrowserRouter} from "react-router-dom";
-import { InputContectProvider } from "../src/Component/context/inputContext";
 import {NoteContextProvider} from "./Context/NoteContext"
 
 
