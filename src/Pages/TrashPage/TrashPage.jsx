@@ -1,16 +1,18 @@
-import React from "react";
-import { useNoteContext } from "../../Context/NoteContext";
-import { Sidebar } from "../../Component/Sidebar/sidebar";
+import React from 'react';
+import { useNoteContext } from '../../Context/NoteContext';
+import { Sidebar } from '../../Component/Sidebar/sidebar';
 
-const Archieve = () => {
-  const { note: {saveArchieve} } = useNoteContext();
+const TrashPage = () => {
+    const {note:{saveTrash},  dispatchNote} = useNoteContext();
+    console.log(saveTrash, "trash");
   return (
-    <div className="archieve-note-container">
+    <div>
+        <div className="archieve-note-container">
        <aside>
           <Sidebar />
         </aside>
       <div className="savedNotes-container">
-            {saveArchieve.map((item) => (
+            {saveTrash.map((item) => (
               <div className="savedNotes-second-container">
                 <h3>{item.Title}</h3>
                 <hr />
@@ -19,16 +21,19 @@ const Archieve = () => {
                 <p>{item.Lable}</p>
                 <div className="SV-icons">
                   <i class="fa fa-edit"></i>
-                  <i class="fa fa-trash-o"></i>
+                  <i  onClick={() =>
+                      dispatchNote({ type: "DELETE_FROM_TRASH", payload: item })
+                    } class="fa fa-trash-o"></i>
                 </div>
               </div>
             ))}
-
-
-
           </div>
     </div>
   );
-};
+    </div>
+  )
+}
 
-export { Archieve };
+
+export{TrashPage}
+
