@@ -14,7 +14,7 @@ function LandingPage() {
                 </div>
                 <div>
                     <Link to="/Notes">
-                    <button className="guest-mode-btn">Join Now As Guest</button>
+                    <button className="guest-mode-btn">Create Notes as Guest</button>
                     </Link>
                 </div>
             </div>
