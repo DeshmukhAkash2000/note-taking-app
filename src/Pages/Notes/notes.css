@@ -11,12 +11,20 @@
 
 .title-input{
     padding: .7rem;
+    width: 80%;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid aqua;
 }
 
 .notes-page-main-container{
     display: flex;
     position: relative;
-    border: 2px solid green;
+
+}
+
+.quill-textarea{
+    height: 5rem;
 }
 
 .home-input-and-btn-container:hover .color-btn-section{
@@ -25,25 +33,32 @@
     justify-content: flex-start;
 }
 
+.sec-radio{
+    margin-top: 4rem;
+}
+
 h4{
     text-decoration: underline;
 }
 
 .home-input-and-btn-container{
     border: 2px solid;
-    width: 25rem;
-    height: 23rem;
+    width: 30rem;
+    height: 30rem;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    border: 2px solid red;
+    border: 2px solid black;
+    padding: 1rem;
 }
 
-.ass{
+ .notes-main-container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+
 }
 
 .savedNotes-container{
@@ -51,8 +66,16 @@ h4{
     margin-bottom: 3rem;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+
+.card-text{
+    text-align: left;
+    margin-left: .5rem;
+
+}
 .savedNotes-second-container{
     border-radius: 10px;
     border: 2px solid;
@@ -124,3 +147,74 @@ h4{
     top: 0;
 }
 
+.trash-archive-span{
+    display: none;
+    font-size: .7rem;
+}
+
+#trash-archieve:hover .trash-archive-span{
+    display: inherit;
+}
+
+.reverse-trash-span{
+    display: none;
+    font-size: .7rem;
+    position: absolute;
+    top: 100%;
+    left: -30%;
+}
+
+#reverse-trash:hover .reverse-trash-span{
+    display: inherit;
+}
+
+#reverse-trash{
+    position: relative;
+}
+
+.permanent-delete-span{
+    display: none;
+    font-size: .7rem;
+    position: absolute;
+    top: 100%;
+    left: -30%;
+}
+
+#trash-permanant-delete:hover .permanent-delete-span{
+    display: inherit;
+}
+
+
+#trash-permanant-delete{
+    position: relative;
+}
+
+.note-edit-span{
+    display: none;
+    font-size: .7rem;
+    position: absolute;
+    top: 100%;
+}
+
+#note-edit-text{
+    position: relative;
+}
+
+#note-edit-text:hover .note-edit-span{
+    display: inherit;
+}
+
+#note-trash-text{
+    position: relative;
+}
+
+.note-trash-span{
+    display: none;
+    font-size: .7rem;
+    position: absolute;
+    top: 100%;
+}
+
+#note-trash-text:hover .note-trash-span{
+    display: inherit;
+}

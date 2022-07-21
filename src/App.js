@@ -6,6 +6,8 @@ import {Routes, Route} from "react-router-dom";
 import { CreateNotes } from "./Pages/CreateNotes/QuillEditor";
 import {Archieve} from "./Pages/Archieve/archieve"
 import { TrashPage } from "./Pages/TrashPage/TrashPage";
+import {Login} from "./Pages/Auth/LogIN/Login"
+import {SignUp} from "./Pages/Auth/SignUP/SignUp"
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
               <Route path="/Notes" element={<Notes/>} />
               <Route path="/archieve" element={<Archieve/>} />
               <Route path="/trash" element={<TrashPage/>} />
+              <Route path="/login" element={<Login/>} />
+              <Route path="/signup" element={<SignUp/>} />
             </Routes>
 
     </div>

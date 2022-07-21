@@ -13,6 +13,13 @@ const Sidebar = () => {
           </div>
        </Link>
 
+       <Link to="/Notes">
+          <div className="sidebar-icon-btn">
+            <i class="fa fa-plus"></i>
+            <button className="sidebar-btn">Add Note</button>
+          </div>
+        </Link>
+
         <Link to="/archieve">
           <div className="sidebar-icon-btn">
             <i class="fa fa-archive side-icon"></i>
@@ -26,11 +33,6 @@ const Sidebar = () => {
             <button className="sidebar-btn">Trash</button>
           </div>
        </Link>
-
-        <div className="sidebar-icon-btn">
-          <i class="fa fa-tags side-icon"></i>
-          <button className="sidebar-btn">Profile</button>
-        </div>
       </aside>
     </div>
   );

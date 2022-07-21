@@ -16,7 +16,7 @@ const Navigation = () => {
             <h1 className="my-notes-text">My_Notes</h1>
           </div>
           <div className="nav-auth-section">
-            <button className="nav-login-btn">LogIn</button>
+            <Link to="login"><button className="nav-login-btn">LogIn</button></Link>
             <i class="fa fa-user"></i>
           </div>
       </header>
